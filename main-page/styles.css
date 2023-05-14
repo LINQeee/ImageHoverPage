@@ -1,0 +1,34 @@
+body{
+    background-image: url(/images/cayde6.jpg);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.cursor{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100px;
+    border: rgb(60, 60, 60) solid 2px;
+    box-shadow: -1px 6px 51px 48px rgba(209, 209, 209, 0.39);
+    overflow: hidden;
+    transition: left 0.03s, top 0.03s, scale 0.3s;
+    transform: scale(1);
+}
+
+#background{
+    position: absolute;
+    width: 111vw;
+    height: 121vh;
+    object-fit: cover;
+    animation: 2s linear infinite blowing;
+    transition: left 0.03s, top 0.03s;
+}
+
+@keyframes blowing{
+    0%{filter: saturate(0);}
+    50%{filter: saturate(1);}
+    100%{filter: saturate(0);}
+}
